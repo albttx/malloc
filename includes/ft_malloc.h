@@ -17,8 +17,6 @@
 # include <sys/mman.h>
 # include <pthread.h>
 
-# define FT_DEBUG 0
-
 # define TINY 1
 # define SMALL 2
 # define LARGE 3
@@ -45,7 +43,6 @@ typedef struct		s_mem_list
 
 	size_t			tiny_size_max;
 	size_t			small_size_max;
-	t_list			*history;
 }					t_mem_list;
 
 typedef struct		s_block
