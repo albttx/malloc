@@ -6,7 +6,7 @@
 #*   By: ale-batt <ale-batt@student.42.fr>          +#+  +:+       +#+        *#
 #*                                                +#+#+#+#+#+   +#+           *#
 #*   Created: 2016/05/28 16:38:24 by ale-batt          #+#    #+#             *#
-#*   Updated: 2016/10/26 14:56:01 by ale-batt         ###   ########.fr       *#
+#*   Updated: 2016/10/28 10:46:39 by ale-batt         ###   ########.fr       *#
 #*                                                                            *#
 #* ************************************************************************** *#
 
@@ -18,7 +18,7 @@ NAME = libft_malloc_$(HOSTTYPE).so
 
 FLAGS = -Wall -Wextra -Werror -g
 
-LIBFT = ../libft
+LIBFT = libft
 
 HEADERS		= -Iincludes/ -I$(LIBFT)/includes
 C_DIR		= sources
