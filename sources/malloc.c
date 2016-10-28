@@ -32,9 +32,9 @@ void	*malloc(size_t size)
 {
 	t_header	*block;
 
-	pthread_mutex_lock(&g_malloc_lock);
 	if (size <= 0)
 		return (NULL);
+	pthread_mutex_lock(&g_malloc_lock);
 	block = handle_sizes(size);
 	pthread_mutex_unlock(&g_malloc_lock);
 	return (block->mem);
